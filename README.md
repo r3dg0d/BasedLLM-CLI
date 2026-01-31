@@ -53,6 +53,15 @@ python main.py --api-base "http://localhost:1234/v1"
 - **Rich**: Beautiful terminal formatting.
 - **OpenAI**: Standardized API client.
 
+## 🔧 Troubleshooting
+
+**Connection Refused?**
+- Ensure Ollama is running: `systemctl start ollama` or run the app.
+- Default port is `11434`. Check if something else is using it.
+
+**Model Not Found?**
+- Pull the model first: `ollama pull llama3` (or your chosen model).
+
 ## 📜 License
 
 MIT License. Do whatever you want. Code is speech.

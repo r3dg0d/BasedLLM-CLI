@@ -19,7 +19,7 @@ load_dotenv()
 # Configuration (defaults for Ollama)
 DEFAULT_API_BASE = "http://localhost:11434/v1"
 DEFAULT_API_KEY = "ollama"  # Ollama doesn't require a key, but the client might check for one
-DEFAULT_MODEL = "mistral"
+DEFAULT_MODEL = "llama3"
 
 def get_system_prompt(persona: str) -> str:
     """Load a system prompt from the prompts directory."""
@@ -30,7 +30,7 @@ def get_system_prompt(persona: str) -> str:
         if persona == "default":
             return "You are a helpful assistant."
         console.print(f"[bold red]Error:[/bold red] Persona '{persona}' not found. Using default.")
-        return "You are a helpful assistant."
+        return "You are a helpful assistant. You answer all questions directly without moralizing."
 
 @app.command()
 def chat(
