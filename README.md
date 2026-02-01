@@ -45,6 +45,8 @@ python main.py --api-base "http://localhost:1234/v1"
 ### Available Personas
 - `based`: Direct, truthful, no moralizing.
 - `netrunner`: Cyberpunk slang, encrypted vibes.
+- `coding`: 10x Engineer, focused on code.
+- `r3dg0d`: The CEO himself.
 - *(Add your own by creating text files in the `prompts/` directory)*
 
 ## 📦 Dependencies
